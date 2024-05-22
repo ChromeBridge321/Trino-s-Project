@@ -1,0 +1,369 @@
+.sidebar{
+    width: 275px;
+    height: 100vh;
+    color: #fff;
+    position: fixed;
+    top: 64px;
+    left: 0;
+    box-shadow: 5px 5px 5px var(--GRY);
+}
+.sidebar__homebtn{
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    width: auto;
+    font-size: 25px;
+    font-weight: 600;
+    color: black;
+    background-color: var(--BL-200);
+}.sidebar__homebtn:active{
+    background-color: var(--BL-300);
+}
+.sidebar ul{
+    margin-top: 10px;
+}.sidebar li{
+    margin: 5px 10px 0 10px;
+}
+.sidebarbtn{
+    display: flex;
+    text-decoration: none;
+    padding: 6px 12px 6px 12px;
+    width: auto;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: black;
+    background-color: var(--WT);
+}.sidebarbtn:hover{
+    background-color: var(--BL-200);
+}.sidebarbtn:active{
+    background-color: var(--BL-300);
+}
+.sidebarbtn__selected{
+    display: flex;
+    text-decoration: none;
+    padding: 6px 0 6px 12px;
+    width: auto;
+    font-size: 18px;
+    font-weight: 600;
+    border-radius: 6px;
+    color: black;
+    background-color: var(--BL-300);
+}
+
+.tablaperiodica .elemento.gp1,
+.tablaperiodica .elemento.gp2,
+.tablaperiodica .elemento.gp3,
+.tablaperiodica .elemento.gp4,
+.tablaperiodica .elemento.gp5,
+.tablaperiodica .elemento.gp6,
+.tablaperiodica .elemento.gp7,
+.tablaperiodica .elemento.gp8,
+.tablaperiodica .elemento.gp9,
+.tablaperiodica .elemento.gp10,
+.tablaperiodica .elemento.gp11{
+    display: flex;
+    padding: 6px 0px 6px 0px;
+    width: 39.56px;
+    height: auto;
+    justify-content: center;
+    font-size: 125%;
+    font-weight: 600;
+    border: 2px solid black;
+    border-radius: 6px;
+    color: black;
+    transition: .4s;
+    transform-origin: center;
+}
+.tablaperiodica .elemento.gp1:hover,
+.tablaperiodica .elemento.gp2:hover,
+.tablaperiodica .elemento.gp3:hover,
+.tablaperiodica .elemento.gp4:hover,
+.tablaperiodica .elemento.gp5:hover,
+.tablaperiodica .elemento.gp6:hover,
+.tablaperiodica .elemento.gp7:hover,
+.tablaperiodica .elemento.gp8:hover,
+.tablaperiodica .elemento.gp9:hover,
+.tablaperiodica .elemento.gp10:hover,
+.tablaperiodica .elemento.gp11:hover{
+    width: 48px;
+    font-size: 150%;
+    transition: .4s;
+    transform-origin: center;
+}
+.tablaperiodica .elemento.gp1:active,
+.tablaperiodica .elemento.gp2:active,
+.tablaperiodica .elemento.gp3:active,
+.tablaperiodica .elemento.gp4:active,
+.tablaperiodica .elemento.gp5:active,
+.tablaperiodica .elemento.gp6:active,
+.tablaperiodica .elemento.gp7:active,
+.tablaperiodica .elemento.gp8:active,
+.tablaperiodica .elemento.gp9:active,
+.tablaperiodica .elemento.gp10:hover,
+.tablaperiodica .elemento.gp11:hover{
+    transition: .4s;
+    transform-origin: center;
+}
+.tablaperiodica .elemento.gp1{
+    background-color: var(--GRN);
+}
+.tablaperiodica .elemento.gp1:hover{
+    background-color: var(--GRN-100);
+}
+.tablaperiodica .elemento.gp1:active{
+    background-color: var(--GRN-0100);
+}
+.tablaperiodica .elemento.gp2{
+    background-color: var(--FUX);
+}
+.tablaperiodica .elemento.gp2:hover{
+    background-color: var(--FUX-100);
+}
+.tablaperiodica .elemento.gp2:active{
+    background-color: var(--FUX-0100);
+}
+.tablaperiodica .elemento.gp3{
+    background-color: var(--ORN);
+}
+.tablaperiodica .elemento.gp3:hover{
+    background-color: var(--ORN-100);
+}
+.tablaperiodica .elemento.gp3:active{
+    background-color: var(--ORN-0100);
+}
+.tablaperiodica .elemento.gp4{
+    background-color: var(--YW);
+}
+.tablaperiodica .elemento.gp4:hover{
+    background-color: var(--YW-100);
+}
+.tablaperiodica .elemento.gp4:active{
+    background-color: var(--YW-0100);
+}
+.tablaperiodica .elemento.gp5{
+    background-color: var(--AQA);
+}
+.tablaperiodica .elemento.gp5:hover{
+    background-color: var(--AQA-100);
+}
+.tablaperiodica .elemento.gp5:active{
+    background-color: var(--AQA-0100);
+}
+.tablaperiodica .elemento.gp6{
+    background-color: var(--GRN2);
+}
+.tablaperiodica .elemento.gp6:hover{
+    background-color: var(--GRN2-100);
+}
+.tablaperiodica .elemento.gp6:active{
+    background-color: var(--GRN2-0100);
+}
+.tablaperiodica .elemento.gp7{
+    background-color: var(--BL-300);
+}
+.tablaperiodica .elemento.gp7:hover{
+    background-color: var(--BL-200);
+}
+.tablaperiodica .elemento.gp7:active{
+    background-color: var(--BL-400);
+}
+.tablaperiodica .elemento.gp8{
+    background-color: var(--RD);
+}
+.tablaperiodica .elemento.gp8:hover{
+    background-color: var(--RD-100);
+}
+.tablaperiodica .elemento.gp8:active{
+    background-color: var(--RD-0100);
+}
+.tablaperiodica .elemento.gp9{
+    background-color: var(--GRY);
+}
+.tablaperiodica .elemento.gp9:hover{
+    background-color: var(--GRY-100);
+}
+.tablaperiodica .elemento.gp9:active{
+    background-color: var(--GRY-0100);
+}
+.tablaperiodica .elemento.gp10{
+    background-color: var(--LIM);
+}
+.tablaperiodica .elemento.gp10:hover{
+    background-color: var(--LIM-100);
+}
+.tablaperiodica .elemento.gp10:active{
+    background-color: var(--LIM-0100);
+}
+.tablaperiodica .elemento.gp11{
+    background-color: var(--YW2);
+}
+.tablaperiodica .elemento.gp11:hover{
+    background-color: var(--YW2-100);
+}
+.tablaperiodica .elemento.gp11:active{
+    background-color: var(--YW2-0100);
+}
+.gp1{
+    background-color: var(--GRN);
+}
+.gp2{
+    background-color: var(--FUX);
+}
+.gp3{
+    background-color: var(--ORN);
+}
+.gp4{
+    background-color: var(--YW);
+}
+.gp5{
+    background-color: var(--AQA);
+}
+.gp6{
+    background-color: var(--GRN2);
+}
+.gp7{
+    background-color: var(--BL-300);
+}
+.gp8{
+    background-color: var(--RD);
+}
+.gp9{
+    background-color: var(--GRY);
+}
+.gp10{
+    background-color: var(--LIM);
+}
+.gp11{
+    background-color: var(--YW2);
+}
+.wh{
+    display: flex;
+    padding: 6px 0px 6px 0px;
+    width: 39.56px;
+    height: auto;
+    justify-content: center;
+    font-size: 125%;
+    font-weight: 600;
+    border: 2px solid white;
+    border-radius: 6px;
+    color: white;
+    transition: .4s;
+    transform-origin: center;
+    background-color: white;
+    cursor: default;
+}
+
+@media (max-width: 1879px){
+    .tablaperiodica .elemento.gp1,
+    .tablaperiodica .elemento.gp2,
+    .tablaperiodica .elemento.gp3,
+    .tablaperiodica .elemento.gp4,
+    .tablaperiodica .elemento.gp5,
+    .tablaperiodica .elemento.gp6,
+    .tablaperiodica .elemento.gp7,
+    .tablaperiodica .elemento.gp8,
+    .tablaperiodica .elemento.gp9,
+    .tablaperiodica .elemento.gp10,
+    .tablaperiodica .elemento.gp11{
+        display: flex;
+        padding: 12px 0px 12px 0px;
+        width: 60.13px;
+        height: auto;
+        justify-content: center;
+        font-size: 150%;
+        font-weight: 600;
+        border: 2px solid black;
+        border-radius: 6px;
+        color: black;
+        transition: .4s;
+        transform-origin: center;
+    }
+    .tablaperiodica .elemento.gp1:hover,
+    .tablaperiodica .elemento.gp2:hover,
+    .tablaperiodica .elemento.gp3:hover,
+    .tablaperiodica .elemento.gp4:hover,
+    .tablaperiodica .elemento.gp5:hover,
+    .tablaperiodica .elemento.gp6:hover,
+    .tablaperiodica .elemento.gp7:hover,
+    .tablaperiodica .elemento.gp8:hover,
+    .tablaperiodica .elemento.gp9:hover,
+    .tablaperiodica .elemento.gp10:hover,
+    .tablaperiodica .elemento.gp11:hover{
+        width: 66px;
+        transition: .4s;
+        transform-origin: center;
+    }
+    
+    .wh{
+        display: flex;
+        padding: 6px 0px 6px 0px;
+        width: 60.13px;
+        height: auto;
+        justify-content: center;
+        font-size: 125%;
+        font-weight: 600;
+        border: 2px solid white;
+        border-radius: 6px;
+        color: white;
+        transition: .4s;
+        transform-origin: center;
+        background-color: white;
+    }
+}
+@media (max-width: 1325px){
+    .tablaperiodica .elemento.gp1,
+    .tablaperiodica .elemento.gp2,
+    .tablaperiodica .elemento.gp3,
+    .tablaperiodica .elemento.gp4,
+    .tablaperiodica .elemento.gp5,
+    .tablaperiodica .elemento.gp6,
+    .tablaperiodica .elemento.gp7,
+    .tablaperiodica .elemento.gp8,
+    .tablaperiodica .elemento.gp9,
+    .tablaperiodica .elemento.gp10,
+    .tablaperiodica .elemento.gp11{
+        display: flex;
+        padding: 6px 0px 6px 0px;
+        width: 39.56px;
+        height: auto;
+        justify-content: center;
+        font-size: 125%;
+        font-weight: 600;
+        border: 2px solid black;
+        border-radius: 6px;
+        color: black;
+        transition: .4s;
+        transform-origin: center;
+    }
+    .tablaperiodica .elemento.gp1:hover,
+    .tablaperiodica .elemento.gp2:hover,
+    .tablaperiodica .elemento.gp3:hover,
+    .tablaperiodica .elemento.gp4:hover,
+    .tablaperiodica .elemento.gp5:hover,
+    .tablaperiodica .elemento.gp6:hover,
+    .tablaperiodica .elemento.gp7:hover,
+    .tablaperiodica .elemento.gp8:hover,
+    .tablaperiodica .elemento.gp9:hover,
+    .tablaperiodica .elemento.gp10:hover,
+    .tablaperiodica .elemento.gp11:hover{
+        width: 48px;
+        transition: .4s;
+        transform-origin: center;
+    }
+    .wh{
+        display: flex;
+        padding: 6px 0px 6px 0px;
+        width: 39.56px;
+        height: auto;
+        justify-content: center;
+        font-size: 125%;
+        font-weight: 600;
+        border: 2px solid white;
+        border-radius: 6px;
+        color: white;
+        transition: .4s;
+        transform-origin: center;
+        background-color: white;
+    }
+}
