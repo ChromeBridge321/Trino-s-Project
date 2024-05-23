@@ -9,3 +9,5 @@ Route::get('/home', function () {
 Route::get('/periodictable', function () {
     return view('periodicTable');
 })->name('periodictable');
+
+//comit
