@@ -36,7 +36,7 @@
             </a>
           </li>
           <li class="nav-item mb-1">
-            <a href="#" class="sidebarbtn">
+            <a href="{{route('ejercicios')}}"  class="sidebarbtn">
               Ejercicios
             </a>
           </li>
