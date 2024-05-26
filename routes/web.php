@@ -24,6 +24,7 @@ Route::get('/exercise-1', function () {
 
 
 Route::get('/exercise-1', [App\Http\Controllers\ChemicalController::class, 'index'])->name('index');
-Route::post('/exercise-require-1', [App\Http\Controllers\ChemicalController::class, 'generate'])->name('exercise-require-1');
+Route::post('/exercise-require', [App\Http\Controllers\ChemicalController::class, 'generate'])->name('exercise-require-1');
+Route::post('/answer-exercise', [App\Http\Controllers\ChemicalController::class, 'answer'])->name('respuesta');
 
 //comit
