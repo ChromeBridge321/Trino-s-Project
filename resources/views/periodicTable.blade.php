@@ -43,7 +43,7 @@
                 Ejercicios<i class="fa-solid fa-caret-down"></i>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="">Por Balanceo</a></li>
+                <li><a class="dropdown-item" href="#">Por Balanceo</a></li>
                 <li><a class="dropdown-item" href="{{route('ejercicios')}}">Por Tanteo</a></li>
               </ul>
             </div>
@@ -64,7 +64,7 @@
 
     <div class="maincontainer">
       <div class="maincontent">
-        <p class="maincontent__title">Tabla Periódica </p>
+        <p class="maincontent__title"><h2>Tabla Periódica</h2></p>
 
         <div class="infopanel_container">
           <div class="secondcapa">

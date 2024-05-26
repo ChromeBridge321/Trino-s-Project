@@ -14,4 +14,8 @@ Route::get('/exercices', function () {
     return view('exercices');
 })->name('ejercicios');
 
+Route::get('/exercices-selector', function () {
+    return view('tanteoGallery');
+})->name('galeriatanteo');
+
 //comit

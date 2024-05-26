@@ -63,77 +63,18 @@
 
         <div class="maincontainer">
             <div class="maincontent">
-                <div class=" row">
 
-                    <div class="col-12 pt-2 text-center">
-                        <h2>Balanceo por tanteo</h2>
-                    </div>
-
-                    <div class="col-12 pt-3">
-                        <p>
-                            El balanceo de ecuaciones químicas por tanteo se refiere a ir adivinando paso a paso los
-                            coeficientes delante de las fórmulas en una ecuación química, hasta que existan la misma
-                            cantidad de elementos del lado izquierdo y del lado derecho de la flecha.
-
-                            Por ejemplo, en la ecuación del amoníaco NH3 más oxígeno O2 se produce nitrógeno N2 y agua
-                            H2O:
-                        </p>
-                    </div>
-
-
-                    <div class=" col-12 pt-3">
-                        <img src="{{ asset('images/balanceo-1.jpg') }}" alt="" class=" img-fluid">
-                    </div>
-
-
-                    <div class="col-12 pt-3">
-                        <p>
-                            Como podemos ver, la cantidad de átomos en los reactantes no es igual a los átomos del lado
-                            de los productos.
-
-                            Como hay 2 nitrógenos del lado de los productos, vamos a colocar el coeficiente 2 delante
-                            del amoniaco en los reactantes; como hay 2 oxígenos del lado de los reactantes colocaremos
-                            un 2 delante del agua:
-                        </p>
-                    </div>
-
-
-                    <div class=" col-12 pt-3">
-                        <img src="{{ asset('images/balanceo-2.jpg') }}" alt="" class=" img-fluid">
-                    </div>
-
-
-                    <div class="col-12 pt-3">
-                        <p>
-                            Aunque ahora el nitrógeno y el oxígeno están balanceados, seguimos teniendo una diferencia
-                            entre los hidrógenos de ambos lados.
-
-                            Probemos ahora colocando 4 amoniacos y 3 O2 del lado izquierdo, y 2 N2 y 6 agua:
-                        </p>
-                    </div>
-
-
-                    <div class=" col-12 pt-3">
-                        <img src="{{ asset('images/balanceo-3.jpg') }}" alt="" class=" img-fluid">
-                    </div>
-
-
-                    <div class="col-12 pt-3">
-                        <p>
-                            Ahora los elementos del lado izquierdo de la flecha son los mismos que aparecen en el lado
-                            derecho. tenemos una ecuación balanceada.
-                        </p>
-                    </div>
-
-
-                    <div class="col-12 d-flex justify-content-end pb-5">
-                      <a class=" btn btn-outline-primary ps-5 pe-5" href="{{route('galeriatanteo')}}">
-                        Ejercicios
-                      </a>
-                    </div>
-
-
+                <div class="maincontent__title">
+                    <h2>Lista de Ejercicios</h2>
                 </div>
+
+
+                <div class="col-12 d-flex justify-content-end pb-5">
+                    <a class=" btn btn-outline-primary ps-5 pe-5">
+                        Ejercicios
+                    </a>
+                </div>
+
             </div>
         </div>
 

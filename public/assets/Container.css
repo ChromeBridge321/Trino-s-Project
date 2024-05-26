@@ -25,6 +25,11 @@ header {
     width: 100%;
     margin: 0;
 }
+.dropdown-menu ul{
+    margin-top: 0px;
+}.dropdown-menu li{
+    margin: 0px;
+}
 .dropdown-menu li a{
     font-weight: 600;
 }

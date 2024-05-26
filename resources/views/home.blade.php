@@ -10,7 +10,9 @@
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
     crossorigin="anonymous"
     />
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat&family=Open+Sans&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.min.css">
     <link rel="stylesheet" href="{{asset('assets/ColorVar.css')}}">
     <link rel="stylesheet" href="{{asset('assets/Buttons.css')}}">
@@ -36,9 +38,15 @@
             </a>
           </li>
           <li class="nav-item mb-1">
-            <a href="{{route('ejercicios')}}" class="sidebarbtn">
-              Ejercicios
-            </a>
+            <div class="dropdown">
+              <button class="btn side-bar dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Ejercicios<i class="fa-solid fa-caret-down"></i>
+              </button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Por Balanceo</a></li>
+                <li><a class="dropdown-item" href="{{route('ejercicios')}}">Por Tanteo</a></li>
+              </ul>
+            </div>
           </li>
           <li class="nav-item mb-1">
             <a href="#" class="sidebarbtn">
