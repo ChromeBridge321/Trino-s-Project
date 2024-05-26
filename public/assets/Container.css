@@ -25,6 +25,18 @@ header {
     width: 100%;
     margin: 0;
 }
+.dropdown-menu li a{
+    font-weight: 600;
+}
+.dropdown-menu li a:hover{
+    background: var(--BL-200);
+    font-weight: 600;
+}
+.dropdown-menu li a:active{
+    background: var(--BL-300);
+    color: black;
+    font-weight: 600; 
+}
 .maincontainer{
     margin-left: 285px;
     width: 80%;

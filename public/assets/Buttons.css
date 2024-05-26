@@ -50,6 +50,28 @@
     color: black;
     background-color: var(--BL-300);
 }
+.btn.side-bar.dropdown{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+    background-color: var(--WT);
+    border: transparent;
+}
+.btn.side-bar.dropdown i{
+    padding-top: 4px;
+}
+.btn.side-bar.dropdown:hover{
+    background-color: var(--BL-200);
+    border: transparent;
+}
+.btn.side-bar.dropdown:focus{
+    color: black;
+    background-color: var(--BL-300);
+    border: transparent;
+}
 
 .tablaperiodica .elemento.gp1,
 .tablaperiodica .elemento.gp2,
