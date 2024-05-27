@@ -39,12 +39,20 @@
           </li>
           <li class="nav-item mb-1">
             <div class="dropdown">
-              <button class="btn side-bar dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+              <button class="btn side-bar dropdown" id="sbEjercicios" type="button" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
                 Ejercicios<i class="fa-solid fa-caret-down"></i>
               </button>
               <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Por Balanceo</a></li>
-                <li><a class="dropdown-item" href="{{route('ejercicios')}}">Por Tanteo</a></li>
+                {{--<li><a class="dropdown-item" href="#">Por Balanceo</a></li>--}}
+                <li class="nav-item dropend">
+                    <a href="#" id="sbPorTanteo" class="dropdown-item dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                        Por tanteo<i class="fa-solid fa-caret-right"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="{{route('ejercicios')}}">Explicación</a></li>
+                        <li><a class="dropdown-item" href="{{route('galeriatanteo')}}">Galería de Ejercicios</a></li>
+                    </ul>
+                </li>
               </ul>
             </div>
           </li>
@@ -64,7 +72,10 @@
 
     <div class="maincontainer">
       <div class="maincontent">
-        <p class="maincontent__title"><h2>Tabla Periódica</h2></p>
+
+        <div class="maincontent__title">
+          <h2>Tabla Periódica</h2>
+        </div>
 
         <div class="infopanel_container">
           <div class="secondcapa">
@@ -417,5 +428,29 @@
         
     });
   </script>
+  <script>
+    var sbEjercicios = document.getElementById('sbEjercicios');
+    var sbPorTanteo = document.getElementById('sbPorTanteo');
+
+    document.addEventListener('click', function(event) {
+        if ((!sbEjercicios.contains(event.target) && !event.target.classList.contains('dropdown-item'))) {
+            sbEjercicios.classList.remove('side-bar-active');
+            sbPorTanteo.classList.remove('side-bar-active');
+        }
+            if (event.target.classList.contains('side-bar')) {
+                if (sbPorTanteo.classList.contains('side-bar-active')) {
+                    sbPorTanteo.classList.remove('side-bar-active');
+                }
+            }
+    });
+
+    sbEjercicios.addEventListener('click', function() {
+        this.classList.toggle('side-bar-active');
+    });
+    
+    sbPorTanteo.addEventListener('click', function() {
+        this.classList.toggle('side-bar-active');
+    })
+</script>
 </body>
 </html>

@@ -67,10 +67,22 @@
     background-color: var(--BL-200);
     border: transparent;
 }
-.btn.side-bar.dropdown:focus{
+.btn.side-bar.dropdown:active{
     color: black;
     background-color: var(--BL-300);
     border: transparent;
+}
+.btn.side-bar.dropdown.side-bar-active{
+    color: black;
+    background-color: var(--BL-300);
+    border: transparent;
+}
+.nav-item.dropend .dropdown-item.dropdown{
+    display: flex;
+    justify-content: space-between;
+}
+.nav-item.dropend .dropdown-item.dropdown i{
+    padding-top: 4px;
 }
 
 .tablaperiodica .elemento.gp1,

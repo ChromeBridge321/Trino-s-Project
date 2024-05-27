@@ -38,12 +38,20 @@
                 </li>
                 <li class="nav-item mb-1">
                     <div class="dropdown">
-                      <button class="btn side-bar dropdown" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      <button class="btn side-bar dropdown" id="sbEjercicios" type="button" data-bs-auto-close="outside" data-bs-toggle="dropdown" aria-expanded="false">
                         Ejercicios<i class="fa-solid fa-caret-down"></i>
                       </button>
                       <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Por Balanceo</a></li>
-                        <li><a class="dropdown-item" href="{{route('ejercicios')}}">Por Tanteo</a></li>
+                        {{--<li><a class="dropdown-item" href="#">Por Balanceo</a></li>--}}
+                        <li class="nav-item dropend">
+                            <a href="#" id="sbPorTanteo" class="dropdown-item dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                                Por tanteo<i class="fa-solid fa-caret-right"></i>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="{{route('ejercicios')}}">Explicación</a></li>
+                                <li><a class="dropdown-item" href="{{route('galeriatanteo')}}">Galería de Ejercicios</a></li>
+                            </ul>
+                        </li>
                       </ul>
                     </div>
                 </li>
@@ -68,38 +76,36 @@
                     <h2>Lista de Ejercicios</h2>
                 </div>
 
-
-                <div class=" row">
-                    <div class="col-12">
-                        <form action="{{route('index')}}" method="get">{{-- Se llama a la funcion index la cual recibira el valor del input
-                            Exercise-1 para redirigir a esa vista --}}
-                            @csrf
-                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">
-                            <button type="submit">Ejercicio 1</button>
-                        </form>
-                    </div>
-
-                    <div class="col-12">
-                        <form action="{{route('index')}}" method="get">
-                            @csrf
-                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-2">
-                            <button type="submit">Ejercicio 2</button>{{-- Se llama a la funcion index la cual recibira el valor del input
-                                Exercise-2 para redirigir a esa vista --}}
-                        </form>
-                    </div>
-
+                <div class="galeriaCont">
+                    @php
+                        $cont = 1;
+                    @endphp
+                    @for ($i = 1; $i < 5; $i++)
+                        <div class="galeriaRow">
+                        @for ($j = 1; $j < 4; $j++)
+                            <div class="galeriaForm">
+                                <form action="{{route('index')}}" method="get">
+                                    @csrf
+                                    <div class="topimg"></div>
+                                    <div class="galeriaElementTitle">
+                                        <p>Ejercicio {{$cont}}</p>
+                                    </div>
+                                    <div class="galeriaElementCont">
+                                        <input class="d-none" type="text" name="vista" id="" value="Exercise-{{$cont}}">
+                                        <button type="submit" class="btn btn-outline-light">Resolver</button>
+                                    </div>
+                                </form>
+                            </div>
+                            @php
+                                $cont++;
+                            @endphp
+                        @endfor
+                        </div>
+                    @endfor
                 </div>
-
-
-                <div class="col-12 d-flex justify-content-end pb-5">
-                    <a class=" btn btn-outline-primary ps-5 pe-5">
-                        Ejercicios
-                    </a>
-                </div>
-
             </div>
-        </div>
 
+        </div>
     </div>
 
     <!-- Bootstrap JavaScript Libraries -->
@@ -109,6 +115,31 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
         integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous">
+    </script>
+
+    <script>
+        var sbEjercicios = document.getElementById('sbEjercicios');
+        var sbPorTanteo = document.getElementById('sbPorTanteo');
+    
+        document.addEventListener('click', function(event) {
+            if ((!sbEjercicios.contains(event.target) && !event.target.classList.contains('dropdown-item'))) {
+                sbEjercicios.classList.remove('side-bar-active');
+                sbPorTanteo.classList.remove('side-bar-active');
+            }
+            if (event.target.classList.contains('side-bar')) {
+                if (sbPorTanteo.classList.contains('side-bar-active')) {
+                    sbPorTanteo.classList.remove('side-bar-active');
+                }
+            }
+        });
+
+        sbEjercicios.addEventListener('click', function() {
+            this.classList.toggle('side-bar-active');
+        });
+        
+        sbPorTanteo.addEventListener('click', function() {
+            this.classList.toggle('side-bar-active');
+        })
     </script>
 </body>
 

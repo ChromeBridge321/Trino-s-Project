@@ -42,6 +42,45 @@ header {
     color: black;
     font-weight: 600; 
 }
+.dropdown-item.dropdown.side-bar-active{
+    color: black;
+    background-color: var(--BL-300);
+    border: transparent;
+}
+
+.galeriaCont{
+    width: 100%;
+    margin-top: 40px;
+}
+.galeriaRow{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.galeriaForm{
+    width: 200px;
+    height: 150px;
+    margin: 5px 20px;
+    background-color: var(--GRY-0100);
+    border-radius: 15px;
+}
+.topimg{
+    height: 55px;
+    width: 200px;
+    background-color: var(--GRY);
+    border-radius: 15px;
+}
+.galeriaElementTitle{
+    display: flex;
+    justify-content: center;
+    font-weight: 600;
+    margin-top: 5px;
+}
+.galeriaElementCont{
+    display: flex;
+    justify-content: center;
+}
+
 .maincontainer{
     margin-left: 285px;
     width: 80%;
