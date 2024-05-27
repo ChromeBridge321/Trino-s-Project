@@ -85,15 +85,17 @@
                     <h2>Balancea la siguiente ecuacion</h2>
                 </div>
                 <div class=" row">
-                    @if (($Rmolecula_1 == 2) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 2) & ($Rmolecula_4 == 1))
+                    @if (($Rmolecula_1 == 2) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 2) & ($Rmolecula_4 == 1)){{-- aqui se comparan las variables devueltas
+                        por la funcion answer para mostrar una alerta y dar a conocer que la respuesta enviada es correcta --}}
                         <div class="alert alert-success col-12">
                             <h5>Respuesta correcta, sigue asi.</h5>
                         </div>
-                    @elseif(($Rmolecula_1 == 1) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 1) & ($Rmolecula_4 == 1))
+                    @elseif(($Rmolecula_1 == 1) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 1) & ($Rmolecula_4 == 1)){{-- aqui se coloca para evitar una falsa alerta
+                        ya que cada vez que se carga la vista por primera vez estas variables su valor es igual a 1--}}
                         <div class=" col-12">
 
                         </div>
-                    @else
+                    @else {{-- aqui se muestra la alerta de respuesta incorrecta--}}
                         <div class="alert alert-danger col-12">
                             <h5>upss! parece que algo esta mal, intentalo de nuevo.</h5>
                         </div>
@@ -101,21 +103,26 @@
                 </div>
 
                 <div class="row">
+                    {{-- esta seccion es utilizada al momento de llamar la funcion "generate" el valor de la variable molecula-1 es igual al valor
+                        colocado por el usuario al momento de presionar el boton "agregar moleculas" en esta primera parte se compara si el valor ingresado es
+                        menor a 0 0 igual el valor de la varible se retorna con valor 1 para evitar que se ingresen valores negativos o nulos y solo se imprime
+                        una vez la imagen--}}
                     <div class="col d-flex justify-content-center align-items-center flex-column">
                         @if ($molecula_1 <= 0)
                             @php
                                 $molecula_1 = 1;
                             @endphp
                             <img class=" img-fluid w-75" src="{{ asset('images/Sodio.png') }}" alt="">
-                        @elseif ($molecula_1 > 4)
+                        @elseif ($molecula_1 > 4) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
+                            maximo establecido por el programador en este caso 4--}}
                             @php
-                                $molecula_1 = 1;
+                                $molecula_1 = 4;
                             @endphp
-                            @for ($i = 0; $i < 4; $i++)
+                            @for ($i = 0; $i < 4; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
                                 <img class=" img-fluid w-75" src="{{ asset('images/Sodio.png') }}" alt="">
                             @endfor
-                        @else
-                            @for ($i = 0; $i < $molecula_1; $i++)
+                        @else 
+                            @for ($i = 0; $i < $molecula_1; $i++) {{-- aqui se genera el numero de imagenes si todo esta correcto y dentro del rango establecido--}}
                                 <img class=" img-fluid w-75" src="{{ asset('images/Sodio.png') }}" alt="">
                             @endfor
                         @endif
@@ -198,23 +205,26 @@
 
                 <form action="{{ route('exercise-require-1') }}" method="POST" class="row mt-5 pb-4">
                     @csrf
-
+                    {{-- esta seccion es para determinar el numero de imagenes de cada molecula se van a generar--}}
+                    <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">Exercise-1{{--este valor es utilizado para
+                        mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                        de los controladores"--}}
                     <div class="col">
-                        <input class=" form-control fs-4 text-center" type="number" name="Sodio" id=""
-                            value="{{ $molecula_1 }}">
+                        <input class=" form-control fs-4 text-center" type="number" name="molecula_1" id=""
+                            value="{{ $molecula_1 }}"> {{--valor de la molecula 1--}}
                     </div>
 
                     <div class="col text-center p-0">
-                        <h2>Na +</h2>
+                        <h2>Na +</h2> {{--molecula 1--}}
                     </div>
 
                     <div class="col">
-                        <input class=" form-control fs-4 text-center" type="number" name="Yodurodezinc"
-                            id="" value="{{ $molecula_2 }}">
+                        <input class=" form-control fs-4 text-center" type="number" name="molecula_2"
+                            id="" value="{{ $molecula_2 }}"> {{--valor de la molecula 2--}}
                     </div>
 
                     <div class="col text-center">
-                        <h2>ZnI<small class=" fs-5">2</small></h2>
+                        <h2>ZnI<small class=" fs-5">2</small></h2> {{--molecula 2--}}
                     </div>
 
                     <div class="col text-center">
@@ -222,46 +232,60 @@
                     </div>
 
                     <div class="col">
-                        <input class=" form-control fs-4 text-center" type="number" name="Iodurodesodio"
-                            id="" value="{{ $molecula_3 }}">
+                        <input class=" form-control fs-4 text-center" type="number" name="molecula_3"
+                            id="" value="{{ $molecula_3 }}"> {{--valor de la molecula 3--}}
                     </div>
 
                     <div class="col text-center p-0">
-                        <h2>NaI +</h2>
+                        <h2>NaI +</h2>{{--molecula 3--}}
                     </div>
 
                     <div class="col">
-                        <input class=" form-control fs-4 text-center" type="number" name="Zinc" id=""
-                            value="{{ $molecula_4 }}">
+                        <input class=" form-control fs-4 text-center" type="number" name="molecula_4" id=""
+                            value="{{ $molecula_4 }}"> {{--valor de la molecula 4--}}
 
                     </div>
 
                     <div class="col text-center">
-                        <h2>Zn</h2>
+                        <h2>Zn</h2>{{--molecula 4--}}
                     </div>
 
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
                     </div>
 
                     <div class="col-3 pt-5 d-flex align-items-center justify-content-end pe-3">
-                        <button class=" w-100 btn btn-primary" type="submit">Agregar Moleculas</button>
+                        <button class=" w-100 btn btn-primary" type="submit">Agregar Moleculas</button> {{--Boton para agregar las moleculas.
+                            con este boton se envian el valor de las imagenes a generar con la funcion "generate"--}}
                     </div>
                 </form>
 
 
                 <div class=" row d-flex justify-content-end pb-4">
                     <div class="col-7 d-flex justify-content-end">
-                        <a class=" btn btn-danger" href="{{ url('/exercise-1') }}">Limpiar</a>
+                        <form action="{{route('index')}}" method="GET">
+                            @csrf
+                            <button class=" btn btn-danger">Limpiar</button>{{--Este boton llama a la funcion index para limpiar los valores
+                                de cada inpur--}}
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                                mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                                de los controladores"--}}
+                        </form>
                     </div>
 
                     <div class=" col-2 d-flex justify-content-end">
                         <form action="{{ route('exercise-require-1') }}" method="post">
                             @csrf
+                            {{-- esta seccion se usa para poder ver las respuestas prederterminadas haciendo uso de la funcion "require"
+                            se mandan los valores predeterminados a la funcion y se devuelven a la vista para que se muestre la respuesta --}}
+
                             <button class=" btn btn-outline-warning" type="submit">Ver respuesta</button>
-                            <input class=" d-none" type="number" name="Sodio" value="2">
-                            <input class=" d-none" type="number" name="Yodurodezinc" value="1">
-                            <input class=" d-none" type="number" name="Iodurodesodio" value="2">
-                            <input class=" d-none" type="number" name="Zinc" value="1">
+                            <input class=" d-none" type="number" name="molecula_1" value="2">{{-- valor de la molecula 1 --}}
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                                mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                                de los controladores"--}}
+                            <input class=" d-none" type="number" name="molecula_2" value="1">{{-- vallor de la molecula 2 --}}
+                            <input class=" d-none" type="number" name="molecula_3" value="2">{{-- vallor de la molecula 3 --}}
+                            <input class=" d-none" type="number" name="molecula_4" value="1">{{-- vallor de la molecula 4 --}}
 
                         </form>
                     </div>
@@ -269,13 +293,17 @@
                     <div class=" col-3 d-flex align-items-center justify-content-end pe-3">
                         <form action="{{ route('respuesta') }}" method="post" class=" w-100">
                             @csrf
+                            {{-- aqui se envian lan respuestas a la funciom "answer" y se verifican que esten correctas si es asi se manda una alerta--}}
                             <button class=" w-100 btn btn-outline-success" type="submit">Enviar
                                 respuesta</button>
 
-                            <input class=" d-none" type="number" name="Sodio" value="{{ $molecula_1 }}">
-                            <input class=" d-none" type="number" name="Yodurodezinc" value="{{ $molecula_2 }}">
-                            <input class=" d-none" type="number" name="Iodurodesodio" value="{{ $molecula_3 }}">
-                            <input class=" d-none" type="number" name="Zinc" value="{{ $molecula_4 }}">
+                            <input class=" d-none" type="number" name="Rmolecula_1" value="{{ $molecula_1 }}">{{-- valor de la molecula 1 --}}
+                            <input class=" d-none" type="number" name="Rmolecula_2" value="{{ $molecula_2 }}">{{-- valor de la molecula 2 --}}
+                            <input class=" d-none" type="number" name="Rmolecula_3" value="{{ $molecula_3 }}">{{-- valor de la molecula 3 --}}
+                            <input class=" d-none" type="number" name="Rmolecula_4" value="{{ $molecula_4 }}">{{-- valor de la molecula 4 --}}
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                                mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                                de los controladores"--}}
                         </form>
                     </div>
 

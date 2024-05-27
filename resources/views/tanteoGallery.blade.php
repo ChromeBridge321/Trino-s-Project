@@ -71,7 +71,19 @@
 
                 <div class=" row">
                     <div class="col-12">
-                        <a href="{{route('Excercice-1')}}"> Ejercicio 1</a>
+                        <form action="{{route('index')}}" method="get">
+                            @csrf
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">
+                            <button type="submit">Ejercicio 1</button>
+                        </form>
+                    </div>
+
+                    <div class="col-12">
+                        <form action="{{route('index')}}" method="get">
+                            @csrf
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-2">
+                            <button type="submit">Ejercicio 2</button>
+                        </form>
                     </div>
 
                 </div>
