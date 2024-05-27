@@ -71,7 +71,7 @@
 
                 <div class=" row">
                     <div class="col-12">
-                        <a href="{{route('Excercice-1')}}"> Ejercicio 1</a>
+                        <a href="{{route('index')}}"> Ejercicio 1</a>
                     </div>
 
                 </div>
