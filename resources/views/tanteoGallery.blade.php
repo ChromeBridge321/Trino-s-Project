@@ -71,7 +71,21 @@
 
                 <div class=" row">
                     <div class="col-12">
-                        <a href="{{route('index')}}"> Ejercicio 1</a>
+                        <form action="{{route('index')}}" method="get">{{-- Se llama a la funcion index la cual recibira el valor del input
+                            Exercise-1 para redirigir a esa vista --}}
+                            @csrf
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">
+                            <button type="submit">Ejercicio 1</button>
+                        </form>
+                    </div>
+
+                    <div class="col-12">
+                        <form action="{{route('index')}}" method="get">
+                            @csrf
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-2">
+                            <button type="submit">Ejercicio 2</button>{{-- Se llama a la funcion index la cual recibira el valor del input
+                                Exercise-2 para redirigir a esa vista --}}
+                        </form>
                     </div>
 
                 </div>
