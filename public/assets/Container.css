@@ -80,6 +80,9 @@ header {
     display: flex;
     justify-content: center;
 }
+.c-width{
+    width: 50%;
+}
 
 .maincontainer{
     margin-left: 285px;

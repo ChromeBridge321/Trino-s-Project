@@ -44,7 +44,7 @@
                       <ul class="dropdown-menu">
                         {{--<li><a class="dropdown-item" href="#">Por Balanceo</a></li>--}}
                         <li class="nav-item dropend">
-                            <a href="#" class="dropdown-item dropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                            <a href="#" id="sbPorTanteo" class="dropdown-item dropdown" data-bs-toggle="dropdown" aria-expanded="false">
                                 Por tanteo<i class="fa-solid fa-caret-right"></i>
                             </a>
                             <ul class="dropdown-menu">
@@ -54,16 +54,6 @@
                         </li>
                       </ul>
                     </div>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="sidebarbtn">
-                        Example
-                    </a>
-                </li>
-                <li class="nav-item mb-1">
-                    <a href="#" class="sidebarbtn">
-                        Example
-                    </a>
                 </li>
             </ul>
             <hr>

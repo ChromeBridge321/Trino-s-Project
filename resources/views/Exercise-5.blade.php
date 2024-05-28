@@ -92,7 +92,7 @@
                     <h2>Balancea la siguiente ecuacion</h2>
                 </div>
                 <div class=" row">
-                    @if (($Rmolecula_1 == 2) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 2) & ($Rmolecula_4 == 1)){{-- aqui se comparan las variables devueltas
+                    @if (($Rmolecula_1 == 2) & ($Rmolecula_2 == 3) & ($Rmolecula_3 == 1) & ($Rmolecula_4 == 3)){{-- aqui se comparan las variables devueltas
                         por la funcion answer para mostrar una alerta y dar a conocer que la respuesta enviada es correcta --}}
                         <div class="alert alert-success col-12">
                             <h5>Respuesta correcta, sigue asi.</h5>
@@ -119,18 +119,18 @@
                             @php
                                 $molecula_1 = 1;
                             @endphp
-                            <img class=" img-fluid w-75" src="{{ asset('images/Sodio.png') }}" alt="">
-                        @elseif ($molecula_1 > 4) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
+                            <img class=" img-fluid w-75" src="{{ asset('images/Hierro.png') }}" alt="">
+                        @elseif ($molecula_1 > 5) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
                             maximo establecido por el programador en este caso 4--}}
                             @php
-                                $molecula_1 = 4;
+                                $molecula_1 = 5;
                             @endphp
-                            @for ($i = 0; $i < 4; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
-                                <img class=" img-fluid w-75" src="{{ asset('images/Sodio.png') }}" alt="">
+                            @for ($i = 0; $i < 5; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
+                                <img class=" img-fluid w-75" src="{{ asset('images/Hierro.png') }}" alt="">
                             @endfor
                         @else 
                             @for ($i = 0; $i < $molecula_1; $i++) {{-- aqui se genera el numero de imagenes si todo esta correcto y dentro del rango establecido--}}
-                                <img class=" img-fluid w-75" src="{{ asset('images/Sodio.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/Hierro.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -142,17 +142,17 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid" src="{{ asset('images/Yoduro de zinc.png') }}" alt="">
-                        @elseif ($molecula_2 > 4)
+                            <img class="img-fluid" src="{{ asset('images/Ácido Sulfúrico.png') }}" alt="">
+                        @elseif ($molecula_2 > 5)
                             @php
-                                $molecula_2 = 4;
+                                $molecula_2 = 5;
                             @endphp
-                            @for ($i = 0; $i < 4; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Yoduro de zinc.png') }}" alt="">
+                            @for ($i = 0; $i < 5; $i++)
+                                <img class="img-fluid" src="{{ asset('images/Ácido Sulfúrico.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_2; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Yoduro de zinc.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/Ácido Sulfúrico.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -169,17 +169,17 @@
                             @php
                                 $molecula_3 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Ioduro de sodio.png') }}" alt="">
-                        @elseif ($molecula_3 > 4)
+                            <img class=" img-fluid" src="{{ asset('images/Sulfato de HierroIII.png') }}" alt="">
+                        @elseif ($molecula_3 > 5)
                             @php
-                                $molecula_3 = 4;
+                                $molecula_3 = 5;
                             @endphp
-                            @for ($i = 0; $i < 4; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Ioduro de sodio.png') }}" alt="">
+                            @for ($i = 0; $i < 5; $i++)
+                                <img class=" img-fluid" src="{{ asset('images/Sulfato de HierroIII.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_3; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Ioduro de sodio.png') }}"
+                                <img class=" img-fluid" src="{{ asset('images/Sulfato de HierroIII.png') }}"
                                     alt="">
                             @endfor
                         @endif
@@ -191,17 +191,17 @@
                             @php
                                 $molecula_4 = 1;
                             @endphp
-                            <img class=" img-fluid w-75" src="{{ asset('images/Zinc.png') }}" alt="">
-                        @elseif ($molecula_4 > 4)
+                            <img class=" img-fluid w-75" src="{{ asset('images/Hidrógeno2.png') }}" alt="">
+                        @elseif ($molecula_4 > 5)
                             @php
-                                $molecula_4 = 4;
+                                $molecula_4 = 5;
                             @endphp
-                            @for ($i = 0; $i < 4; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Zinc.png') }}" alt="">
+                            @for ($i = 0; $i < 5; $i++)
+                                <img class=" img-fluid w-75" src="{{ asset('images/Hidrógeno2.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_4; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Zinc.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/Hidrógeno2.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -213,7 +213,7 @@
                 <form action="{{ route('exercise-require-1') }}" method="POST" class="row mt-5 pb-4">
                     @csrf
                     {{-- esta seccion es para determinar el numero de imagenes de cada molecula se van a generar--}}
-                    <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                    <input class=" d-none" type="text" name="vista" id="" value="Exercise-5">{{--este valor es utilizado para
                         mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
                         de los controladores"--}}
                     <div class="col">
@@ -222,7 +222,7 @@
                     </div>
 
                     <div class="col text-center p-0">
-                        <h2>Na +</h2> {{--molecula 1--}}
+                        <h2>Fe +</h2> {{--molecula 1--}}
                     </div>
 
                     <div class="col">
@@ -231,7 +231,7 @@
                     </div>
 
                     <div class="col text-center">
-                        <h2>ZnI<small class=" fs-5">2</small></h2> {{--molecula 2--}}
+                        <h2>H<small class=" fs-5">2</small>SO<small class=" fs-5">4</small></h2> {{--molecula 2--}}
                     </div>
 
                     <div class="col text-center">
@@ -244,7 +244,7 @@
                     </div>
 
                     <div class="col text-center p-0">
-                        <h2>NaI +</h2>{{--molecula 3--}}
+                        <h2>Fe<small class=" fs-5">2</small>(SO<small class=" fs-5">4</small>)<small class=" fs-5">3</small> +</h2>{{--molecula 3--}}
                     </div>
 
                     <div class="col">
@@ -254,7 +254,7 @@
                     </div>
 
                     <div class="col text-center">
-                        <h2>Zn</h2>{{--molecula 4--}}
+                        <h2>H<small class=" fs-5">2</small></h2>{{--molecula 4--}}
                     </div>
 
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
@@ -273,7 +273,7 @@
                             @csrf
                             <button class=" btn btn-danger">Limpiar</button>{{--Este boton llama a la funcion index para limpiar los valores
                                 de cada input--}}
-                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-5">{{--este valor es utilizado para
                                 mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
                                 de los controladores"--}}
                         </form>
@@ -287,12 +287,12 @@
 
                             <button class=" btn btn-outline-warning" type="submit">Ver respuesta</button>
                             <input class=" d-none" type="number" name="molecula_1" value="2">{{-- valor de la molecula 1 --}}
-                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-5">{{--este valor es utilizado para
                                 mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
                                 de los controladores"--}}
-                            <input class=" d-none" type="number" name="molecula_2" value="1">{{-- vallor de la molecula 2 --}}
-                            <input class=" d-none" type="number" name="molecula_3" value="2">{{-- vallor de la molecula 3 --}}
-                            <input class=" d-none" type="number" name="molecula_4" value="1">{{-- vallor de la molecula 4 --}}
+                            <input class=" d-none" type="number" name="molecula_2" value="3">{{-- vallor de la molecula 2 --}}
+                            <input class=" d-none" type="number" name="molecula_3" value="1">{{-- vallor de la molecula 3 --}}
+                            <input class=" d-none" type="number" name="molecula_4" value="3">{{-- vallor de la molecula 4 --}}
 
                         </form>
                     </div>
@@ -308,7 +308,7 @@
                             <input class=" d-none" type="number" name="Rmolecula_2" value="{{ $molecula_2 }}">{{-- valor de la molecula 2 --}}
                             <input class=" d-none" type="number" name="Rmolecula_3" value="{{ $molecula_3 }}">{{-- valor de la molecula 3 --}}
                             <input class=" d-none" type="number" name="Rmolecula_4" value="{{ $molecula_4 }}">{{-- valor de la molecula 4 --}}
-                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-1">{{--este valor es utilizado para
+                            <input class=" d-none" type="text" name="vista" id="" value="Exercise-5">{{--este valor es utilizado para
                                 mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
                                 de los controladores"--}}
                         </form>
