@@ -90,7 +90,7 @@
                     @if (($Rmolecula_1 == 2) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 2) & ($Rmolecula_4 == 1))
                         {{-- aqui se comparan las variables devueltas
             por la funcion answer para mostrar una alerta y dar a conocer que la respuesta enviada es correcta --}}
-                        <div class="alert alert-success col-12">
+                        <div class=" text-bg-success pt-3 pb-3 rounded-2 col-12" role="alert">
                             <h5>Respuesta correcta, sigue asi.</h5>
                         </div>
                     @elseif(($Rmolecula_1 == 1) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 1) & ($Rmolecula_4 == 1))
@@ -101,7 +101,7 @@
                         </div>
                     @else
                         {{-- aqui se muestra la alerta de respuesta incorrecta --}}
-                        <div class="alert alert-danger col-12">
+                        <div class="text-bg-danger pt-3 pb-3 rounded-2 col-12">
                             <h5>Upss! Parece que algo esta mal, intentalo de nuevo.</h5>
                         </div>
                     @endif
