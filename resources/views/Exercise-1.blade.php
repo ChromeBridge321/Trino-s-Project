@@ -83,7 +83,7 @@
         <div class="maincontainer">
             <div class=" container  border border-2 border-top-0">
                 <div class=" row col-12 text-center pt-3 pb-3">
-                    <h2>Balancea la siguiente ecuacion</h2>
+                    <h2>Balancea la siguiente ecuacion 1</h2>
                 </div>
 
                 <div class=" row ps-5 pe-5 ">
@@ -219,7 +219,7 @@
                         value="Exercise-1">{{-- este valor es utilizado para
             mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
             de los controladores" --}}
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_1"
                             id="" value="{{ $molecula_1 }}"> {{-- valor de la molecula 1 --}}
                     </div>
@@ -228,7 +228,7 @@
                         <h2 class=" fs-3">Na +</h2> {{-- molecula 1 --}}
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_2"
                             id="" value="{{ $molecula_2 }}"> {{-- valor de la molecula 2 --}}
                     </div>
@@ -241,7 +241,7 @@
                         <h2>--></h2>
                     </div>
 
-                    <div class=" col">
+                    <div class="d-flex justify-content-center align-items-center  col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_3"
                             id="" value="{{ $molecula_3 }}"> {{-- valor de la molecula 3 --}}
                     </div>
@@ -250,7 +250,7 @@
                         <h2 class=" fs-3">NaI +</h2>{{-- molecula 3 --}}
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_4"
                             id="" value="{{ $molecula_4 }}"> {{-- valor de la molecula 4 --}}
 

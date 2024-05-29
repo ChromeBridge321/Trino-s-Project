@@ -80,7 +80,7 @@
         <div class="maincontainer">
             <div class=" container  border border-2 border-top-0">
                 <div class=" col-12 text-center pt-3 pb-3">
-                    <h2>Balancea la siguiente ecuacion</h2>
+                    <h2>Balancea la siguiente ecuacion 8</h2>
                 </div>
                 <div class=" row">
                     @if (($Rmolecula_1 == 2) & ($Rmolecula_2 == 1) & ($Rmolecula_3 == 1) & ($Rmolecula_4 == 1)){{-- aqui se comparan las variables devueltas
@@ -212,39 +212,39 @@
                             value="{{ $molecula_1 }}"> {{--valor de la molecula 1--}}
                     </div>
 
-                    <div class="col text-center p-0">
+                    <div class="d-flex justify-content-center align-items-center col text-center p-0">
                         <h2>HCl +</h2> {{--molecula 1--}}
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_2"
                             id="" value="{{ $molecula_2 }}"> {{--valor de la molecula 2--}}
                     </div>
 
-                    <div class="col text-center">
+                    <div class="d-flex justify-content-center align-items-center col text-center">
                         <h2>Zn</h2> {{--molecula 2--}}
                     </div>
 
-                    <div class="col text-center">
+                    <div class="d-flex justify-content-center align-items-center col text-center">
                         <h2>--></h2>
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_3"
                             id="" value="{{ $molecula_3 }}"> {{--valor de la molecula 3--}}
                     </div>
 
-                    <div class="col text-center p-0">
+                    <div class="d-flex justify-content-center align-items-center col text-center p-0">
                         <h2>ZnCl<small class=" fs-5">2</small> +</h2>{{--molecula 3--}}
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_4" id=""
                             value="{{ $molecula_4 }}"> {{--valor de la molecula 4--}}
 
                     </div>
 
-                    <div class="col text-center">
+                    <div class="d-flex justify-content-center align-items-center col text-center">
                         <h2>H<small class=" fs-5">2</small></h2>{{--molecula 4--}}
                     </div>
 

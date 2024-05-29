@@ -80,7 +80,7 @@
         <div class="maincontainer">
             <div class=" container  border border-2 border-top-0">
                 <div class=" col-12 text-center pt-3 pb-3">
-                    <h2>Balancea la siguiente ecuacion</h2>
+                    <h2>Balancea la siguiente ecuacion 2</h2>
                 </div>
                 <div class=" row">
                     @if (($Rmolecula_1 == 4) & ($Rmolecula_2 == 11) & ($Rmolecula_3 == 2) & ($Rmolecula_4 == 8)){{-- aqui se comparan las variables devueltas
@@ -220,45 +220,45 @@
                     <input class=" d-none" type="text" name="vista" id="" value="Exercise-2">{{--este valor es utilizado para
                         mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
                         de los controladores"--}}
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_1" id=""
                             value="{{ $molecula_1 }}"> {{--valor de la molecula 1--}}
                     </div>
 
-                    <div class="col text-center p-0">
-                        <h2>FeS<small class=" fs-5">2</small> +</h2> {{--molecula 1--}}
+                    <div class= "d-flex justify-content-center align-items-center col text-center p-0">
+                        <h2 class=" fs-3">FeS<small class=" fs-5">2</small> +</h2> {{--molecula 1--}}
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_2"
                             id="" value="{{ $molecula_2 }}"> {{--valor de la molecula 2--}}
                     </div>
 
-                    <div class="col text-center">
-                        <h2>O<small class=" fs-5">2</small></h2> {{--molecula 2--}}
+                    <div class="d-flex justify-content-center align-items-center col text-center">
+                        <h2 class=" fs-3">O<small class=" fs-5">2</small></h2> {{--molecula 2--}}
                     </div>
 
-                    <div class="col text-center">
+                    <div class="d-flex justify-content-center align-items-center col text-center">
                         <h2>--></h2>
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_3"
                             id="" value="{{ $molecula_3 }}"> {{--valor de la molecula 3--}}
                     </div>
 
-                    <div class="col text-center p-0">
-                        <h2>Fe<small class=" fs-5">2</small>O<small class=" fs-5">3</small> +</h2>{{--molecula 3--}}
+                    <div class="d-flex justify-content-center align-items-center col text-center p-0">
+                        <h2 class=" fs-3">Fe<small class=" fs-5">2</small>O<small class=" fs-5">3</small> +</h2>{{--molecula 3--}}
                     </div>
 
-                    <div class="col">
+                    <div class="d-flex justify-content-center align-items-center col">
                         <input class=" form-control fs-4 text-center" type="number" name="molecula_4" id=""
                             value="{{ $molecula_4 }}"> {{--valor de la molecula 4--}}
 
                     </div>
 
-                    <div class="col text-center">
-                        <h2>SO<small class=" fs-5">2</small></h2>{{--molecula 4--}}
+                    <div class="d-flex justify-content-center align-items-center col text-center">
+                        <h2  class=" fs-3">SO<small class=" fs-5">2</small></h2>{{--molecula 4--}}
                     </div>
 
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
