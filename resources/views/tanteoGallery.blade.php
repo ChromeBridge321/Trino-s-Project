@@ -82,8 +82,8 @@
                  @endphp
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-4 pt-4 d-flex justify-content-center align-items-center">
                         <div class=" rounded-4 w-100 border-2 border border-black" style="background-color: var(--BL-500);">
-                            <div class="topimg w-100 bg-white text-black d-flex align-items-center justify-content-center">
-                            <img src="{{asset("images/$cont.png")}}" alt="" class=" img-fluid w-75">
+                            <div class="rounded-4 w-100 bg-white text-black d-flex align-items-center justify-content-center">
+                            <img src="{{asset("images/$cont.png")}}" alt="" class=" img-fluid" style="width: 90%;">
                             </div>
                             <div class="galeriaElementTitle w-100 text-white">
                                 <p class=" fs-4">Ejercicio {{ $cont }}</p>
