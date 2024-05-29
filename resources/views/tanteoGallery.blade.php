@@ -44,7 +44,7 @@
                             Ejercicios<i class="fa-solid fa-caret-down"></i>
                         </button>
                         <ul class="dropdown-menu">
-                            {{-- <li><a class="dropdown-item" href="#">Por Balanceo</a></li> --}}
+                            <li><a class="dropdown-item" href="#">Por Balanceo</a></li>
                             <li class="nav-item dropend">
                                 <a href="#" id="sbPorTanteo" class="dropdown-item dropdown"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -77,10 +77,15 @@
                     $cont = 1;
                 @endphp
                 @for ($i = 0; $i < 12; $i++)
+                 @php
+                     $url = "images/$cont.png";
+                 @endphp
                     <div class=" col-12 col-sm-12 col-md-6 col-lg-4 pt-4 d-flex justify-content-center align-items-center">
-                        <div class=" rounded-4 w-100 bg-info-subtle">
-                            <div class="topimg w-100 bg-primary-subtle"></div>
-                            <div class="galeriaElementTitle w-100 text-info-emphasis">
+                        <div class=" rounded-4 w-100 border-2 border border-black" style="background-color: var(--BL-500);">
+                            <div class="topimg w-100 bg-white text-black d-flex align-items-center justify-content-center">
+                            <img src="{{asset("images/$cont.png")}}" alt="" class=" img-fluid w-75">
+                            </div>
+                            <div class="galeriaElementTitle w-100 text-white">
                                 <p class=" fs-4">Ejercicio {{ $cont }}</p>
                             </div>
                             <form action="{{ route('index') }}" method="get" class=" w-100 pb-3">
@@ -88,7 +93,7 @@
                                 <div class="galeriaElementCont w-100">
                                     <input class="d-none" type="text" name="vista" id=""
                                         value="Exercise-{{ $cont }}">
-                                    <button type="submit" class="btn text-info-emphasis btn-info w-75">Resolver</button>
+                                    <button type="submit" class="btn text-info-emphasis btn-light w-50">Resolver</button>
                                 </div>
                             </form>
                         </div>
