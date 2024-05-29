@@ -116,6 +116,11 @@ header {
 }
 
 /*Página de la Tabla Periódica*/
+.thirdcapa{
+    display: flex;
+    justify-content: center;
+}
+
 .infopanel_container{
     width: 100%;
     display: flex;
@@ -135,6 +140,7 @@ header {
     border: 2px solid black;
     border-radius: 6px;
     transition: .5s;
+    align-self: center;
 }
 #info-panel .top{
     display: flex;
@@ -186,6 +192,32 @@ header {
     display: flex;
     width: 100%;
     justify-content: center;
+}
+.molCont_Container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: .5rem;
+}
+.molCont_Container2{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding-top: .5rem;
+}
+.molCont{
+    font-size: 17px;
+}
+.molCont2{
+    font-size: 17px;
+}
+.molCont_Container2 .molCont{
+    width: 43%;
+    font-size: 17px;
+}
+.molCont_Container2 .molCont2{
+    width: 57%;
+    font-size: 17px;
 }
 
 @media (min-width: 1430px){

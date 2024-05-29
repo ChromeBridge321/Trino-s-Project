@@ -217,6 +217,21 @@
                         <h2>O<small class=" fs-5">2</small></h2>{{--molecula 3--}}
                     </div>
 
+                    <div class="molCont_Container2">
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>K: {{$molecula_1}}</p>
+                            <p>Cl: {{$molecula_1}}</p>
+                            <p>O: {{$molecula_1*3}}</p>
+                        </div>
+                        <div class="molCont2">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>K: {{$molecula_2}}</p>
+                            <p>Cl: {{$molecula_2}}</p>
+                            <p>O: {{$molecula_3*2}}</p>
+                        </div>
+                    </div>
+
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
                     </div>
 

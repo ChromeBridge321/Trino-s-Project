@@ -217,6 +217,19 @@
                         <h2>SO<small class=" fs-5">3</small></h2>{{--molecula 3--}}
                     </div>
 
+                    <div class="molCont_Container">
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>S: {{$molecula_1}}</p>
+                            <p>O: {{($molecula_2*2)+($molecula_1*2)}}</p>
+                        </div>
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>S: {{$molecula_3}}</p>
+                            <p>O: {{$molecula_3*3}}</p>
+                        </div>
+                    </div>
+
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
                     </div>
 

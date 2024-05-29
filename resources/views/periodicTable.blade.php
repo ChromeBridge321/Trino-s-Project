@@ -69,29 +69,32 @@
 
         <div class="infopanel_container">
           <div class="secondcapa">
-            <div id="info-panel">
-              <div class="top">
-                <div class="A-Side">
-                  <p id="elementName"></p>
+            <div class="thirdcapa">
+              <div id="info-panel">
+                <div class="top">
+                  <div class="A-Side">
+                    <p id="elementName"></p>
+                  </div>
+                  <div class="B-Side">
+                    <p id="elementAtNum"></p>
+                  </div>
                 </div>
-                <div class="B-Side">
-                  <p id="elementAtNum"></p>
-                </div>
-              </div>
-              <div class="middle">
-                <div class="A-Side">
-                  <p id="elementSymbol"></p>
-                </div>
-                <div class="B-Side">
-                  <p id="elementOxNum"></p>
+                <div class="middle">
+                  <div class="A-Side">
+                    <p id="elementSymbol"></p>
+                  </div>
+                  <div class="B-Side">
+                    <p id="elementOxNum"></p>
+                  </div>
                 </div>
               </div>
             </div>
-            
+
             <div class="info_element">
-              <p>Elemento</p>
+              <p id="groupName">Grupo</p>
             </div>
           </div>
+
         </div>
 
         <div class="tablaperiodica">
@@ -327,6 +330,7 @@
             const name = this.getAttribute('data-name');
             const atomicNumber = this.getAttribute('data-atomic-number');
             const oxidateNumber = this.getAttribute('data-oxidate-number')
+            const groupName = document.getElementById('groupName');
 
             switch (element.className) {
               case 'elemento gp1':
@@ -335,6 +339,7 @@
                 }
                 panel.classList.add('gp1');
                 colorgp = 'gp1';
+                groupName.innerText = 'Grupo: No Metales'
                 break;
               case 'elemento gp2':
                 if (cont>0) {
@@ -342,6 +347,7 @@
                 }
                 panel.classList.add('gp2');
                 colorgp = 'gp2';
+                groupName.innerText = 'Grupo: Gases Nobles'
                 break;
               case 'elemento gp3':
                 if (cont>0) {
@@ -349,6 +355,7 @@
                 }
                 panel.classList.add('gp3');
                 colorgp = 'gp3';
+                groupName.innerText = 'Grupo: Metales Alcalinos'
                 break;
               case 'elemento gp4':
                 if (cont>0) {
@@ -356,6 +363,7 @@
                 }
                 panel.classList.add('gp4');
                 colorgp = 'gp4';
+                groupName.innerText = 'Grupo: Alcalinotérreos'
                 break;
               case 'elemento gp5':
                 if (cont>0) {
@@ -363,6 +371,7 @@
                 }
                 panel.classList.add('gp5');
                 colorgp = 'gp5';
+                groupName.innerText = 'Grupo: Metaloides'
                 break;
               case 'elemento gp6':
                 if (cont>0) {
@@ -370,6 +379,7 @@
                 }
                 panel.classList.add('gp6');
                 colorgp = 'gp6';
+                groupName.innerText = 'Grupo: Halógenos'
                 break;
               case 'elemento gp7':
                 if (cont>0) {
@@ -377,6 +387,7 @@
                 }
                 panel.classList.add('gp7');
                 colorgp = 'gp7';
+                groupName.innerText = 'Grupo: Otros Metales'
                 break;
               case 'elemento gp8':
                 if (cont>0) {
@@ -384,6 +395,7 @@
                 }
                 panel.classList.add('gp8');
                 colorgp = 'gp8';
+                groupName.innerText = 'Grupo: Metales de Transición'
                 break;
               case 'elemento gp9':
                 if (cont>0) {
@@ -391,6 +403,7 @@
                 }
                 panel.classList.add('gp9');
                 colorgp = 'gp9';
+                groupName.innerText = 'Grupo: Elementos Desconocidos'
                 break;
               case 'elemento gp10':
                 if (cont>0) {
@@ -398,6 +411,7 @@
                 }
                 panel.classList.add('gp10');
                 colorgp = 'gp10';
+                groupName.innerText = 'Grupo: Lantánidos'
                 break;
               case 'elemento gp11':
                 if (cont>0) {
@@ -405,6 +419,7 @@
                 }
                 panel.classList.add('gp11');
                 colorgp = 'gp11';
+                groupName.innerText = 'Grupo: Actínidos'
                 break;
             }
 

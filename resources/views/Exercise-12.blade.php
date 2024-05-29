@@ -204,7 +204,7 @@
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center col text-center">
-                        <h2>MnO<small class=" fs-5">7</small></h2> {{--molecula 2--}}
+                        <h2>MnO<small class=" fs-5">2</small></h2> {{--molecula 2--}}
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center col">
@@ -214,6 +214,19 @@
 
                     <div class="d-flex justify-content-center align-items-center col text-center p-0">
                         <h2>O<small class=" fs-5">2</small></h2>{{--molecula 3--}}
+                    </div>
+
+                    <div class="molCont_Container2">
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Mn: {{$molecula_1*2}}</p>
+                            <p>O: {{$molecula_1*7}}</p>
+                        </div>
+                        <div class="molCont2">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Mn: {{$molecula_2}}</p>
+                            <p>O: {{($molecula_2*2)+($molecula_3*2)}}</p>
+                        </div>
                     </div>
 
                     <div class="d-flex justify-content-center align-items-center col-9 pt-5 d-flex align-items-center justify-content-end">

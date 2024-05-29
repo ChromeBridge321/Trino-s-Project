@@ -260,6 +260,21 @@
                         <h2 class=" fs-3">Zn</h2>{{-- molecula 4 --}}
                     </div>
 
+                    <div class="col-9 pt-2 d-flex align-items-center justify-content-between">
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Na: {{$molecula_1}}</p>
+                            <p>Zn: {{$molecula_2}}</p>
+                            <p>I: {{$molecula_2*2}}</p>
+                        </div>
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Na: {{$molecula_3}}</p>
+                            <p>Zn: {{$molecula_4}}</p>
+                            <p>I: {{$molecula_3}}</p>
+                        </div>
+                    </div>
+
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
                     </div>
 

@@ -248,6 +248,21 @@
                         <h2>HCl</h2>{{--molecula 4--}}
                     </div>
 
+                    <div class="col-9 pt-2 d-flex align-items-center justify-content-between">
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Cl: {{$molecula_1*2}}</p>
+                            <p>I: {{$molecula_2}}</p>
+                            <p>H: {{$molecula_2}}</p>
+                        </div>
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Ca: {{$molecula_4}}</p>
+                            <p>I: {{$molecula_3*2}}</p>
+                            <p>H: {{$molecula_4}}</p>
+                        </div>
+                    </div>
+
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
                     </div>
 

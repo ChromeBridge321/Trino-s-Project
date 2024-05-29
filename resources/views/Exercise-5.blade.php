@@ -248,6 +248,23 @@
                         <h2 class=" fs-4">H<small class=" fs-5">2</small></h2>{{--molecula 4--}}
                     </div>
 
+                    <div class="col-9 pt-2 d-flex align-items-center justify-content-between">
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Fe: {{$molecula_1}}</p>
+                            <p>S: {{$molecula_2}}</p>
+                            <p>O: {{$molecula_2*4}}</p>
+                            <p>H: {{$molecula_2*2}}</p>
+                        </div>
+                        <div class="molCont">
+                            <p><h5>Cantidad de moleculas</h5></p>
+                            <p>Fe: {{$molecula_3*2}}</p>
+                            <p>S: {{$molecula_3*3}}</p>
+                            <p>O: {{$molecula_3*12}}</p>
+                            <p>H: {{$molecula_4*2}}</p>
+                        </div>
+                    </div>
+
                     <div class="col-9 pt-5 d-flex align-items-center justify-content-end">
                     </div>
 
