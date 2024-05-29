@@ -272,15 +272,29 @@
 
 
                 <div class=" row d-flex justify-content-end pb-4">
-                    <div class="col-7 d-flex justify-content-end">
+                    <div class="col-2"></div>
+                    <div class="col-2 d-flex justify-content-center">
+                        <form action="{{ route('index') }}" method="GET">
+                            @csrf
+                            <button class=" btn btn-primary">Siguiente</button>{{-- Este boton llama a la funcion index para limpiar los valores
+                                de cada input --}}
+                            <input class=" d-none" type="text" name="vista" id=""
+                                value="Exercise-2">{{-- este valor es utilizado para
+                                            mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                                            de los controladores" --}}
+                        </form>
+                    </div>
+
+
+                    <div class="col-3 d-flex justify-content-end">
                         <form action="{{ route('index') }}" method="GET">
                             @csrf
                             <button class=" btn btn-danger">Limpiar</button>{{-- Este boton llama a la funcion index para limpiar los valores
-                    de cada input --}}
+                                de cada input --}}
                             <input class=" d-none" type="text" name="vista" id=""
                                 value="Exercise-1">{{-- este valor es utilizado para
-                    mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
-                    de los controladores" --}}
+                                            mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                                            de los controladores" --}}
                         </form>
                     </div>
 
@@ -288,15 +302,15 @@
                         <form action="{{ route('exercise-require-1') }}" method="post">
                             @csrf
                             {{-- esta seccion se usa para poder ver las respuestas prederterminadas haciendo uso de la funcion "require"
-                se mandan los valores predeterminados a la funcion y se devuelven a la vista para que se muestre la respuesta --}}
+                         se mandan los valores predeterminados a la funcion y se devuelven a la vista para que se muestre la respuesta --}}
 
                             <button class=" btn btn-outline-warning" type="submit">Ver respuesta</button>
                             <input class=" d-none" type="number" name="molecula_1"
                                 value="2">{{-- valor de la molecula 1 --}}
                             <input class=" d-none" type="text" name="vista" id=""
                                 value="Exercise-1">{{-- este valor es utilizado para
-                    mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
-                    de los controladores" --}}
+                            mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                            de los controladores" --}}
                             <input class=" d-none" type="number" name="molecula_2"
                                 value="1">{{-- vallor de la molecula 2 --}}
                             <input class=" d-none" type="number" name="molecula_3"
@@ -307,7 +321,7 @@
                         </form>
                     </div>
 
-                    <div class=" col-3 d-flex align-items-center justify-content-end pe-3">
+                    <div class=" col-2 d-flex align-items-center justify-content-end pe-3">
                         <form action="{{ route('respuesta') }}" method="post" class=" w-100">
                             @csrf
                             {{-- aqui se envian lan respuestas a la funciom "answer" y se verifican que esten correctas si es asi se manda una alerta --}}

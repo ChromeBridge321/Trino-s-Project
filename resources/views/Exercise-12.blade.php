@@ -76,7 +76,7 @@
             <hr>
         </div>
 
-        <div class="maincontai7ner">
+        <div class="maincontainer">
             <div class=" container  border border-2 border-top-0">
                 <div class=" col-12 text-center pt-3 pb-3">
                     <h2>Balancea la siguiente ecuacion 12</h2>
@@ -227,7 +227,20 @@
 
 
                 <div class=" row d-flex justify-content-end pb-4">
-                    <div class="col-7 d-flex justify-content-end">
+                    <div class="col-2 d-flex justify-content-center">
+                        <form action="{{ route('index') }}" method="GET">
+                            @csrf
+                            <button class=" btn btn-primary">Anterior</button>{{-- Este boton llama a la funcion index para limpiar los valores
+                                de cada input --}}
+                            <input class=" d-none" type="text" name="vista" id=""
+                                value="Exercise-11">{{-- este valor es utilizado para
+                                            mandar la cadena "Exercise-x esto es para poder redirigir a la vista correcta y solo hacer uso de pocoas funciones por parte
+                                            de los controladores" --}}
+                        </form>
+                    </div>
+                    <div class="col-2 d-flex justify-content-center">
+                    </div>
+                    <div class="col-4 d-flex justify-content-end">
                         <form action="{{route('index')}}" method="GET">
                             @csrf
                             <button class=" btn btn-danger">Limpiar</button>{{--Este boton llama a la funcion index para limpiar los valores
@@ -255,7 +268,7 @@
                         </form>
                     </div>
 
-                    <div class=" col-3 d-flex align-items-center justify-content-end pe-3">
+                    <div class=" col-2 d-flex align-items-center justify-content-end pe-3">
                         <form action="{{ route('respuesta') }}" method="post" class=" w-100">
                             @csrf
                             {{-- aqui se envian lan respuestas a la funciom "answer" y se verifican que esten correctas si es asi se manda una alerta--}}
