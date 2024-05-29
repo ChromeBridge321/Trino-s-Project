@@ -78,7 +78,7 @@
         </div>
 
         <div class="maincontainer">
-            <div class="maincontent ps-3 pe-3">
+            <div class=" container  border border-2 border-top-0">
                 <div class=" col-12 text-center pt-3 pb-3">
                     <h2>Balancea la siguiente ecuacion</h2>
                 </div>
@@ -283,7 +283,7 @@
                         </form>
                     </div>
 
-                    <div class=" col-2 d-flex justify-content-end">
+                    <div class=" col-2 d-flex justify-content-center">
                         <form action="{{ route('exercise-require-1') }}" method="post">
                             @csrf
                             {{-- esta seccion se usa para poder ver las respuestas prederterminadas haciendo uso de la funcion "require"

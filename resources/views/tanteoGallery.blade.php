@@ -44,7 +44,6 @@
                             Ejercicios<i class="fa-solid fa-caret-down"></i>
                         </button>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Por Balanceo</a></li>
                             <li class="nav-item dropend">
                                 <a href="#" id="sbPorTanteo" class="dropdown-item dropdown"
                                     data-bs-toggle="dropdown" aria-expanded="false">
@@ -63,46 +62,54 @@
             <hr>
         </div>
 
-        <div class="maincontainer d-flex flex-column">
-            <div class=" row ps-5 pe-5">
+        <div class="maincontainer d-flex flex-column ">
+            <div class=" container border border-2 border-top-0 border-bottom-0">
+                <div class=" row ps-5 pe-5">
 
-                <div class=" col-12 text-center pt-5">
-                    <h2>Lista de Ejercicios</h2>
+                    <div class=" col-12 text-center pt-5">
+                        <h2>Lista de Ejercicios</h2>
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div class=" row d-flex justify-content-around align-items-center ps-4 pe-4">
-                @php
-                    $cont = 1;
-                @endphp
-                @for ($i = 0; $i < 12; $i++)
-                 @php
-                     $url = "images/$cont.png";
-                 @endphp
-                    <div class=" col-12 col-sm-12 col-md-6 col-lg-4 pt-4 d-flex justify-content-center align-items-center">
-                        <div class=" rounded-4 w-100 border-2 border border-black" style="background-color: var(--BL-500);">
-                            <div class="rounded-4 w-100 bg-white text-black d-flex align-items-center justify-content-center">
-                            <img src="{{asset("images/$cont.png")}}" alt="" class=" img-fluid" style="width: 90%;">
-                            </div>
-                            <div class="galeriaElementTitle w-100 text-white">
-                                <p class=" fs-4">Ejercicio {{ $cont }}</p>
-                            </div>
-                            <form action="{{ route('index') }}" method="get" class=" w-100 pb-3">
-                                @csrf
-                                <div class="galeriaElementCont w-100">
-                                    <input class="d-none" type="text" name="vista" id=""
-                                        value="Exercise-{{ $cont }}">
-                                    <button type="submit" class="btn text-info-emphasis btn-light w-50">Resolver</button>
-                                </div>
-                            </form>
-                        </div>
-
-                    </div>
+                <div class=" row d-flex justify-content-around align-items-center ps-4 pe-4">
                     @php
-                        $cont = $cont + 1;
+                        $cont = 1;
                     @endphp
-                @endfor
+                    @for ($i = 0; $i < 12; $i++)
+                        @php
+                            $url = "images/$cont.png";
+                        @endphp
+                        <div
+                            class=" col-12 col-sm-12 col-md-6 col-lg-4 pt-4 d-flex justify-content-center align-items-center">
+                            <div class=" rounded-4 w-100 border-2 border border-black"
+                                style="background-color: var(--BL-500);">
+                                <div
+                                    class="rounded-4 w-100 bg-white text-black d-flex align-items-center justify-content-center">
+                                    <img src="{{ asset("images/$cont.png") }}" alt="" class=" img-fluid"
+                                        style="width: 90%;">
+                                </div>
+                                <div class="galeriaElementTitle w-100 text-white">
+                                    <p class=" fs-4">Ejercicio {{ $cont }}</p>
+                                </div>
+                                <form action="{{ route('index') }}" method="get" class=" w-100 pb-3">
+                                    @csrf
+                                    <div class="galeriaElementCont w-100">
+                                        <input class="d-none" type="text" name="vista" id=""
+                                            value="Exercise-{{ $cont }}">
+                                        <button type="submit"
+                                            class="btn text-info-emphasis btn-light w-50">Resolver</button>
+                                    </div>
+                                </form>
+                            </div>
+
+                        </div>
+                        @php
+                            $cont = $cont + 1;
+                        @endphp
+                    @endfor
+
+                </div>
 
             </div>
 
@@ -122,7 +129,7 @@
         var sbEjercicios = document.getElementById('sbEjercicios');
         var sbPorTanteo = document.getElementById('sbPorTanteo');
 
-        document.addEventListener('click', function(event) { 
+        document.addEventListener('click', function(event) {
             if ((!sbEjercicios.contains(event.target) && !event.target.classList.contains('dropdown-item'))) {
                 sbEjercicios.classList.remove('side-bar-active');
                 sbPorTanteo.classList.remove('side-bar-active');
