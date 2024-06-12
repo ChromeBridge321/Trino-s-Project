@@ -110,18 +110,18 @@
                             @php
                                 $molecula_1 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Clorato de Potasio.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/CloratodePotasio.png') }}" alt="">
                         @elseif ($molecula_1 > 5) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
                             maximo establecido por el programador en este caso 4--}}
                             @php
                                 $molecula_1 = 5;
                             @endphp
                             @for ($i = 0; $i < 5; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
-                                <img class=" img-fluid" src="{{ asset('images/Clorato de Potasio.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/CloratodePotasio.png') }}" alt="">
                             @endfor
                         @else 
                             @for ($i = 0; $i < $molecula_1; $i++) {{-- aqui se genera el numero de imagenes si todo esta correcto y dentro del rango establecido--}}
-                                <img class=" img-fluid" src="{{ asset('images/Clorato de Potasio.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/CloratodePotasio.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -137,17 +137,17 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid" src="{{ asset('images/Cloruro de Potasio.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('images/ClorurodePotasio.png') }}" alt="">
                         @elseif ($molecula_2 > 5)
                             @php
                                 $molecula_2 = 5;
                             @endphp
                             @for ($i = 0; $i < 5; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Cloruro de Potasio.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/ClorurodePotasio.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_2; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Cloruro de Potasio.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/ClorurodePotasio.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -160,17 +160,17 @@
                             @php
                                 $molecula_3 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                         @elseif ($molecula_3 > 5)
                             @php
                                 $molecula_3 = 5;
                             @endphp
                             @for ($i = 0; $i < 5; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_3; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Oxígeno2.png') }}"
+                                <img class=" img-fluid" src="{{ asset('images/Oxigeno2.png') }}"
                                     alt="">
                             @endfor
                         @endif

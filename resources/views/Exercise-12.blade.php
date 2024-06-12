@@ -109,18 +109,18 @@
                             @php
                                 $molecula_1 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Heptaóxido de Manganeso.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/HeptaoxidodeManganeso.png') }}" alt="">
                         @elseif ($molecula_1 > 6) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
                             maximo establecido por el programador en este caso 4--}}
                             @php
                                 $molecula_1 = 6;
                             @endphp
                             @for ($i = 0; $i < 6; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
-                                <img class=" img-fluid" src="{{ asset('images/Heptaóxido de Manganeso.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/HeptaoxidodeManganeso.png') }}" alt="">
                             @endfor
                         @else 
                             @for ($i = 0; $i < $molecula_1; $i++) {{-- aqui se genera el numero de imagenes si todo esta correcto y dentro del rango establecido--}}
-                                <img class=" img-fluid" src="{{ asset('images/Heptaóxido de Manganeso.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/HeptaoxidodeManganeso.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -136,17 +136,17 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid w-75" src="{{ asset('images/Óxido de Manganeso.png') }}" alt="">
+                            <img class="img-fluid w-75" src="{{ asset('images/OxidodeManganeso.png') }}" alt="">
                         @elseif ($molecula_2 > 6)
                             @php
                                 $molecula_2 = 6;
                             @endphp
                             @for ($i = 0; $i < 6; $i++)
-                                <img class="img-fluid w-75" src="{{ asset('images/Óxido de Manganeso.png') }}" alt="">
+                                <img class="img-fluid w-75" src="{{ asset('images/OxidodeManganeso.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_2; $i++)
-                                <img class="img-fluid w-75" src="{{ asset('images/Óxido de Manganeso.png') }}" alt="">
+                                <img class="img-fluid w-75" src="{{ asset('images/OxidodeManganeso.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -159,17 +159,17 @@
                             @php
                                 $molecula_3 = 1;
                             @endphp
-                            <img class=" img-fluid w-75" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                            <img class=" img-fluid w-75" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                         @elseif ($molecula_3 > 6)
                             @php
                                 $molecula_3 = 6;
                             @endphp
                             @for ($i = 0; $i < 6; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_3; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Oxígeno2.png') }}"
+                                <img class=" img-fluid w-75" src="{{ asset('images/Oxigeno2.png') }}"
                                     alt="">
                             @endfor
                         @endif

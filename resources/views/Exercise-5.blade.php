@@ -133,17 +133,17 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid" src="{{ asset('images/Ácido Sulfúrico.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('images/AcidoSulfurico.png') }}" alt="">
                         @elseif ($molecula_2 > 5)
                             @php
                                 $molecula_2 = 5;
                             @endphp
                             @for ($i = 0; $i < 5; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Ácido Sulfúrico.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/AcidoSulfurico.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_2; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Ácido Sulfúrico.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/AcidoSulfurico.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -160,17 +160,17 @@
                             @php
                                 $molecula_3 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Sulfato de HierroIII.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/SulfatodeHierroIII.png') }}" alt="">
                         @elseif ($molecula_3 > 5)
                             @php
                                 $molecula_3 = 5;
                             @endphp
                             @for ($i = 0; $i < 5; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Sulfato de HierroIII.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/SulfatodeHierroIII.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_3; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Sulfato de HierroIII.png') }}"
+                                <img class=" img-fluid" src="{{ asset('images/SulfatodeHierroIII.png') }}"
                                     alt="">
                             @endfor
                         @endif
@@ -182,17 +182,17 @@
                             @php
                                 $molecula_4 = 1;
                             @endphp
-                            <img class=" img-fluid w-75" src="{{ asset('images/Hidrógeno2.png') }}" alt="">
+                            <img class=" img-fluid w-75" src="{{ asset('images/Hidrogeno2.png') }}" alt="">
                         @elseif ($molecula_4 > 5)
                             @php
                                 $molecula_4 = 5;
                             @endphp
                             @for ($i = 0; $i < 5; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Hidrógeno2.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/Hidrogeno2.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_4; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Hidrógeno2.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/Hidrogeno2.png') }}" alt="">
                             @endfor
                         @endif
 

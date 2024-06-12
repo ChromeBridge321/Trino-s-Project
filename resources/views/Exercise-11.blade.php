@@ -110,18 +110,18 @@
                             @php
                                 $molecula_1 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Cloro Gaseoso.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/CloroGaseoso.png') }}" alt="">
                         @elseif ($molecula_1 > 3) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
                             maximo establecido por el programador en este caso 4--}}
                             @php
                                 $molecula_1 = 3;
                             @endphp
                             @for ($i = 0; $i < 3; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
-                                <img class=" img-fluid" src="{{ asset('images/Cloro Gaseoso.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/CloroGaseoso.png') }}" alt="">
                             @endfor
                         @else 
                             @for ($i = 0; $i < $molecula_1; $i++) {{-- aqui se genera el numero de imagenes si todo esta correcto y dentro del rango establecido--}}
-                                <img class=" img-fluid" src="{{ asset('images/Cloro Gaseoso.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/CloroGaseoso.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -133,17 +133,17 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid w-75" src="{{ asset('images/Yoduro de Hidrógeno.png') }}" alt="">
+                            <img class="img-fluid w-75" src="{{ asset('images/YodurodeHidrogeno.png') }}" alt="">
                         @elseif ($molecula_2 > 3)
                             @php
                                 $molecula_2 = 3;
                             @endphp
                             @for ($i = 0; $i < 3; $i++)
-                                <img class="img-fluid w-75" src="{{ asset('images/Yoduro de Hidrógeno.png') }}" alt="">
+                                <img class="img-fluid w-75" src="{{ asset('images/YodurodeHidrogeno.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_2; $i++)
-                                <img class="img-fluid w-75" src="{{ asset('images/Yoduro de Hidrógeno.png') }}" alt="">
+                                <img class="img-fluid w-75" src="{{ asset('images/YodurodeHidrogeno.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -182,17 +182,17 @@
                             @php
                                 $molecula_4 = 1;
                             @endphp
-                            <img class=" img-fluid w-75" src="{{ asset('images/Ácido Clorhídrico-rojo.png') }}" alt="">
+                            <img class=" img-fluid w-75" src="{{ asset('images/AcidoClorhidrico-rojo.png') }}" alt="">
                         @elseif ($molecula_4 > 3)
                             @php
                                 $molecula_4 = 3;
                             @endphp
                             @for ($i = 0; $i < 3; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Ácido Clorhídrico-rojo.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/AcidoClorhidrico-rojo.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_4; $i++)
-                                <img class=" img-fluid w-75" src="{{ asset('images/Ácido Clorhídrico-rojo.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/AcidoClorhidrico-rojo.png') }}" alt="">
                             @endfor
                         @endif
 

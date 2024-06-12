@@ -110,18 +110,18 @@
                             @php
                                 $molecula_1 = 1;
                             @endphp
-                            <img class=" img-fluid w-75" src="{{ asset('images/Disulfuro de HierroII.png') }}" alt="">
+                            <img class=" img-fluid w-75" src="{{ asset('images/DisulfurodeHierroII.png') }}" alt="">
                         @elseif ($molecula_1 > 6) {{-- al igual que la parte anterior aqui si el valor de la variable sobre pasa a la establecida se retorna el valor
                             maximo establecido por el programador en este caso 4--}}
                             @php
                                 $molecula_1 = 6;
                             @endphp
                             @for ($i = 0; $i < 6; $i++) {{-- si el valor es sobrepasado se imprimira el maximo permitido en este caso 4--}}
-                                <img class=" img-fluid w-75" src="{{ asset('images/Disulfuro de HierroII.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/DisulfurodeHierroII.png') }}" alt="">
                             @endfor
                         @else 
                             @for ($i = 0; $i < $molecula_1; $i++) {{-- aqui se genera el numero de imagenes si todo esta correcto y dentro del rango establecido--}}
-                                <img class=" img-fluid w-75" src="{{ asset('images/Disulfuro de HierroII.png') }}" alt="">
+                                <img class=" img-fluid w-75" src="{{ asset('images/DisulfurodeHierroII.png') }}" alt="">
                             @endfor
                         @endif
                     </div>
@@ -132,7 +132,7 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid c-width" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                            <img class="img-fluid c-width" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                         @elseif ($molecula_2 > 12)
                             @php
                                 $molecula_2 = 12;
@@ -140,8 +140,8 @@
                             @for ($i = 0; $i < 12; $i++)
                                 @if (($i+2)%2 == 0)
                                     <div class="d-flex">
-                                        <img class="img-fluid c-width" src="{{ asset('images/Oxígeno2.png') }}" alt="">
-                                        <img class="img-fluid c-width" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                                        <img class="img-fluid c-width" src="{{ asset('images/Oxigeno2.png') }}" alt="">
+                                        <img class="img-fluid c-width" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                                     </div>
                                 @endif
                             @endfor
@@ -149,13 +149,13 @@
                             @for ($i = 0; $i < $molecula_2; $i++)
                                 @if ($molecula_2%2 == 1 && $molecula_2 - $i == 1)
                                     <div class="d-flex justify-content-center">
-                                        <img class="img-fluid c-width" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                                        <img class="img-fluid c-width" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                                     </div>
                                 @else
                                     @if (($i)%2 == 0)
                                         <div class="d-flex">
-                                            <img class="img-fluid c-width" src="{{ asset('images/Oxígeno2.png') }}" alt="">
-                                            <img class="img-fluid c-width" src="{{ asset('images/Oxígeno2.png') }}" alt="">
+                                            <img class="img-fluid c-width" src="{{ asset('images/Oxigeno2.png') }}" alt="">
+                                            <img class="img-fluid c-width" src="{{ asset('images/Oxigeno2.png') }}" alt="">
                                         </div>
                                     @endif
                                 @endif
@@ -174,17 +174,17 @@
                             @php
                                 $molecula_3 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Óxido de HierroIII.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/OxidodeHierroIII.png') }}" alt="">
                         @elseif ($molecula_3 > 4)
                             @php
                                 $molecula_3 = 4;
                             @endphp
                             @for ($i = 0; $i < 4; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Óxido de HierroIII.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/OxidodeHierroIII.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_3; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Óxido de HierroIII.png') }}"
+                                <img class=" img-fluid" src="{{ asset('images/OxidodeHierroIII.png') }}"
                                     alt="">
                             @endfor
                         @endif
@@ -196,17 +196,17 @@
                             @php
                                 $molecula_4 = 1;
                             @endphp
-                            <img class=" img-fluid w-50" src="{{ asset('images/Dióxido de Azufre.png') }}" alt="">
+                            <img class=" img-fluid w-50" src="{{ asset('images/DioxidodeAzufre.png') }}" alt="">
                         @elseif ($molecula_4 > 10)
                             @php
                                 $molecula_4 = 10;
                             @endphp
                             @for ($i = 0; $i < 10; $i++)
-                                <img class=" img-fluid w-50" src="{{ asset('images/Dióxido de Azufre.png') }}" alt="">
+                                <img class=" img-fluid w-50" src="{{ asset('images/DioxidodeAzufre.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_4; $i++)
-                                <img class=" img-fluid w-50" src="{{ asset('images/Dióxido de Azufre.png') }}" alt="">
+                                <img class=" img-fluid w-50" src="{{ asset('images/DioxidodeAzufre.png') }}" alt="">
                             @endfor
                         @endif
                     </div>

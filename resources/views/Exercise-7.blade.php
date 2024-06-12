@@ -133,17 +133,17 @@
                             @php
                                 $molecula_2 = 1;
                             @endphp
-                            <img class="img-fluid" src="{{ asset('images/Óxido de Nitrógeno.png') }}" alt="">
+                            <img class="img-fluid" src="{{ asset('images/OxidodeNitrogeno.png') }}" alt="">
                         @elseif ($molecula_2 > 3)
                             @php
                                 $molecula_2 = 3;
                             @endphp
                             @for ($i = 0; $i < 3; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Óxido de Nitrógeno.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/OxidodeNitrogeno.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_2; $i++)
-                                <img class="img-fluid" src="{{ asset('images/Óxido de Nitrógeno.png') }}" alt="">
+                                <img class="img-fluid" src="{{ asset('images/OxidodeNitrogeno.png') }}" alt="">
                             @endfor
                         @endif
 
@@ -160,17 +160,17 @@
                             @php
                                 $molecula_3 = 1;
                             @endphp
-                            <img class=" img-fluid" src="{{ asset('images/Ácido Nítrico.png') }}" alt="">
+                            <img class=" img-fluid" src="{{ asset('images/AcidoNitrico.png') }}" alt="">
                         @elseif ($molecula_3 > 3)
                             @php
                                 $molecula_3 = 3;
                             @endphp
                             @for ($i = 0; $i < 3; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Ácido Nítrico.png') }}" alt="">
+                                <img class=" img-fluid" src="{{ asset('images/AcidoNitrico.png') }}" alt="">
                             @endfor
                         @else
                             @for ($i = 0; $i < $molecula_3; $i++)
-                                <img class=" img-fluid" src="{{ asset('images/Ácido Nítrico.png') }}"
+                                <img class=" img-fluid" src="{{ asset('images/AcidoNitrico.png') }}"
                                     alt="">
                             @endfor
                         @endif
